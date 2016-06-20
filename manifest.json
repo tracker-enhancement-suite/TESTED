@@ -1,0 +1,28 @@
+{
+  "name": "Tracker Enhancement Suite, The Elegant Distribution",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "author": "Jordan Collier, Travis Yoder",
+  "description": "Collection of cool tracker ish",
+  "homepage_url": "https://github.com/tracker-enhancement-suite/TESTED",
+  "permissions": [
+    "http://www.pivotaltracker.com/*",
+    "https://www.pivotaltracker.com/*"
+  ],
+  "short_name": "TESTED",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.pivotaltracker.com/*",
+        "https://www.pivotaltracker.com/*"
+      ],
+      "js": [
+        "StoryTemplate/js/jquery/jquery.min.js",
+        "StoryTemplate/src/inject/inject.js",
+        "revisit-reject/src/inject/inject.js",
+        "easy-copy-for-pivotal-tracker/source/js/jquery-1.9.1.min.js",
+        "easy-copy-for-pivotal-tracker/source/js/contentscript.js"
+      ]
+    }
+  ]
+}
